@@ -1,210 +1,279 @@
-body{
+/* =========================
+   WHOLE WEBSITE
+   ========================= */
+
+html {
+    background-color: wheat;
+}
+
+body {
     margin: 0;
     background-color: wheat;
 }
-.main-nav{
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.main-nav {
     display: flex;
-     background-color: #3b2416;
+    background-color: #3b2416;
     align-items: center;
-   
-  
+    padding: 10px 20px;
 }
-.main-nav h1{
+
+.main-nav h1 {
     color: white;
     font-style: italic;
     text-decoration: underline;
-    font-size: 50px;
-    color: wheat;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 100px;
     margin-left: auto;
-  
-    
 }
+
 .nav-links a {
     color: white;
-    font-size: 35px;
-    color: wheat;
 }
-#welcome img{
- width: 100%;
- height: 400px;
- object-fit: cover;
- 
-}
-#welcome{
+
+
+/* =========================
+   HOME - WELCOME SECTION
+   ========================= */
+
+#welcome {
     position: relative;
 }
-.welcome-text{
-     position: absolute;
+
+#welcome img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.welcome-text {
+    position: absolute;
     top: 100px;
     left: 60px;
 }
-.welcome-text h2{
+
+.welcome-text h2 {
     color: white;
     font-size: 60px;
 }
+
 .welcome-text p {
     color: white;
     font-size: 30px;
 }
+
 .welcome-text a {
     color: black;
     text-decoration: none;
-    size: 40px;
+    font-size: 40px;
     background-color: gold;
     border-radius: 60px;
-        padding: 10px 25px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    padding: 10px 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#about h2{
+
+
+/* =========================
+   HOME - ABOUT SECTION
+   ========================= */
+
+#about h2 {
     text-align: center;
     color: #3b2416;
     font-size: 80px;
-
 }
+
 #about p {
-     text-align: center;
+    text-align: center;
     color: #3b2416;
     font-size: 30px;
-
-
 }
+
+
+/* =========================
+   HOME - FEATURES
+   ========================= */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
 .features img {
     width: 300px;
     height: 200px;
     object-fit: cover;
 }
-.features {
-    display: flex;
-    justify-content: space-around;
-}
-.features h3{
-      text-align: center;
+
+.features h3 {
+    text-align: center;
     font-size: 25px;
     color: #3b2416;
-
-}
-footer h4{
-    font-size: 50px;
-}
-footer{
-     text-align: center;
-    font-size: 15px;
-    color: #3b2416;
-
-
-}
-footer h3{
-    font-size: 50px;
 }
 
 
-#menu img{
+/* =========================
+   MENU HERO
+   ========================= */
+
+#menu {
+    position: relative;
+}
+
+#menu img {
     width: 100%;
     height: 400px;
     object-fit: cover;
 }
-#menu {
-    position: relative;
-}
+
 .menu-text {
     position: absolute;
     top: 100px;
-    text-align: center;
     right: 80px;
-      font-size: 25px;
+    text-align: center;
+    font-size: 25px;
     font-style: oblique;
 }
-    
 
-.menu-text h2{
+.menu-text h2 {
     font-size: 70px;
-   font-style: oblique;
-   margin-top: 0px;
-   margin-bottom: 10px;
-
+    margin-top: 0;
+    margin-bottom: 10px;
 }
+
 .menu-text p {
     font-size: 25px;
     margin-top: 0;
 }
+
+
+/* =========================
+   MENU FOOD CARDS
+   ========================= */
+
+#menufood {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.lebanese-food {
+    text-align: center;
+}
+
 .lebanese-food img {
     width: 500px;
     height: 200px;
     object-fit: cover;
-    border: 5px ;
-    border-color: #3b2416;
-    border-style: solid;
-        border-radius: 15px;
+    border: 7px solid #3b2416;
+    border-radius: 20px;
+}
 
-}
-#menufood {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-       margin-top: 50px;
-       margin: 300px;
-}
-#menufood button{
+#menufood button {
     background-color: #3b2416;
     border: none;
     color: wheat;
     padding: 20px;
     cursor: pointer;
-    
-    
-}
-footer h5{
-    font-size: 50px;
-}
-footer{
-    background-color: #3b2416;
-    color: wheat;
 }
 
-.Lebanese-sweets img{
-      width: 500px;
-    height: 200px;
-    object-fit: cover;
-     border: 5px;
-        border-color: #3b2416;
-        border-style: solid;
-       border-radius: 15px;
-   
-
+.lebanese-food button:hover {
+    background-color: gold;
 }
-#desserts{
+
+.lebanese-food button:active {
+    background-color: red;
+}
+
+
+/* =========================
+   DESSERT CARDS
+   ========================= */
+
+#desserts {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-       margin-top: 50px;
-       margin: 150px;
-       
+    margin-top: 50px;
+    justify-content: center;
 }
-#desserts button{
+
+.Lebanese-sweets {
+    text-align: center;
+}
+
+.Lebanese-sweets img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #3b2416;
+    border-radius: 20px;
+}
+
+#desserts button {
     background-color: #3b2416;
     border: none;
     color: wheat;
     padding: 20px;
     cursor: pointer;
-   
 }
-.Lebanese-sweets {
+
+.Lebanese-sweets button:hover {
+    background-color: gold;
+}
+
+.Lebanese-sweets button:active {
+    background-color: red;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    color: wheat;
+    background-color: #3b2416;
+    padding: 20px;
 }
+
+footer h3 {
+    color: wheat;
+}
+
+
+/* ======================================
+   PHONE DESIGN - 600px OR SMALLER
+   ====================================== */
+
 @media (max-width: 600px) {
 
+    html,
     body {
+        margin: 0;
         background-color: wheat;
+        width: 100%;
+        overflow-x: hidden;
     }
+
+
+    /* NAVBAR */
 
     .main-nav {
         padding: 10px;
+        width: auto;
     }
 
     .main-nav h1 {
@@ -213,11 +282,17 @@ footer{
 
     .nav-links {
         margin-left: auto;
-        gap: 15px;
+        gap: 12px;
     }
 
-    #welcome img,
-    #menu img {
+    .nav-links a {
+        font-size: 16px;
+    }
+
+
+    /* WELCOME */
+
+    #welcome img {
         width: 100%;
         height: 300px;
         object-fit: cover;
@@ -226,39 +301,123 @@ footer{
     .welcome-text {
         top: 40px;
         left: 20px;
+        right: 20px;
     }
 
     .welcome-text h2 {
         font-size: 32px;
+        margin-bottom: 10px;
     }
 
     .welcome-text p {
         font-size: 16px;
     }
 
+    .welcome-text a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+
+    /* ABOUT */
+
+    #about h2 {
+        font-size: 35px;
+    }
+
+    #about p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+
+    /* HOME FEATURES */
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .features img {
+        width: 90vw;
+        height: 200px;
+        object-fit: cover;
+    }
+
+
+    /* MENU HERO */
+
+    #menu img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
     .menu-text {
         top: 50px;
         right: 20px;
+        left: 20px;
+        font-size: 18px;
     }
 
     .menu-text h2 {
         font-size: 40px;
+        margin-bottom: 10px;
     }
 
     .menu-text p {
         font-size: 18px;
     }
 
-    #menufood,
-    #desserts,
-    .features {
+
+    /* FOOD CARDS */
+
+    #menufood {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
+        margin-top: 50px;
     }
 
-    .lebanese-food img,
-    .Lebanese-sweets img {
-        width: 90vw;
-        height: 200px;
+    .lebanese-food {
+        width: 90%;
+        text-align: center;
     }
+
+    .lebanese-food img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+
+    /* DESSERT CARDS */
+
+    #desserts {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .Lebanese-sweets {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Lebanese-sweets img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+    footer {
+        font-size: 13px;
+        padding: 15px;
+    }
+
 }
+
+
