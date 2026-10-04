@@ -22,6 +22,9 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
+main {
+    background-color: wheat;
+}
 
 .main-nav h1 {
     color: white;
